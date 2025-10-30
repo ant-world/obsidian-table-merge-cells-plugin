@@ -6,3 +6,26 @@ available in the app when your plugin is enabled.
 If your plugin does not need CSS, delete this file.
 
 */
+/* 确保合并的单元格在编辑视图中正确显示 */
+.markdown-source-view .cm-table-widget {
+  border-collapse: collapse;
+}
+
+.markdown-source-view .cm-table-widget td,
+.markdown-source-view .cm-table-widget th {
+  border: 1px solid var(--background-modifier-border);
+  padding: 4px 8px;
+}
+
+/* 阅读视图中的表格样式 */
+.markdown-preview-view table {
+  border-collapse: collapse;
+  margin: 1em 0;
+  width: 100%;
+}
+
+.markdown-preview-view table td,
+.markdown-preview-view table th {
+  border: 1px solid var(--background-modifier-border);
+  padding: 4px 8px;
+}
